@@ -1,17 +1,20 @@
 module Helperhtml exposing (..)
 
-import Html exposing (Html, div, h1, ul, li, text)
+import Html exposing (Html, div, h1, li, text, ul)
+
 
 type alias Computadora =
     { ram : String
-    , model : String    
-    , brand : String    
+    , model : String
+    , brand : String
     , screenSize : String
     }
+
 
 myLaptop : Computadora
 myLaptop =
     { ram = "16GB", model = "XPS 13", brand = "Dell", screenSize = "13.4" }
+
 
 main : Html msg
 main =
