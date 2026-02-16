@@ -3,7 +3,9 @@ module Helper exposing (..)
 import Html exposing (Html, div, h1, li, text, ul)
 
 
+
 -- FUNCIONES BÁSICAS
+
 
 add2 : Int -> Int -> Int
 add2 x y =
@@ -22,6 +24,7 @@ calc x y op =
 
 
 -- EJERCICIOS DE REGISTROS (Lenguajes)
+
 
 type alias Language =
     { name : String
@@ -45,6 +48,7 @@ languageNames list =
 
 -- EJERCICIOS DE USUARIOS
 
+
 type alias User =
     { name : String
     , uType : String
@@ -64,6 +68,7 @@ onlyStudents pp =
         (\user ->
             if user.uType == "Student" then
                 user.name
+
             else
                 ""
         )
@@ -71,8 +76,8 @@ onlyStudents pp =
 
 
 
-
 -- EJERCICIOS DE VIDEOJUEGOS
+
 
 type alias Videogame =
     { title : String
@@ -108,6 +113,7 @@ getVideogameGenres game =
 
 -- EJERCICIO HTML
 
+
 type alias Computadora =
     { ram : String
     , model : String
@@ -138,4 +144,3 @@ main =
                 ]
             ]
         ]
-
